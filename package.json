@@ -4,8 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "nodemon --exec babel-node src/index.js",
     "dev": "nodemon --exec babel-node src/index.js",
+    "start_production": "node dist/index.js",
     "build": "babel src --out-dir dist"
   },
   "dependencies": {
